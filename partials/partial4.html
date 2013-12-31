@@ -1,0 +1,32 @@
+<div class="container-fluid">
+  <div class="row-fluid">
+    <div class="span2">
+		<h1>MY MUSIC</h1>
+		<p>The Latest Music I've Uploaded</p>
+		<!--Sidebar content-->
+
+      Search: <input ng-model="query">
+      Sort by:
+      <select ng-model="orderProp">
+        <option value="name">Alphabetical</option>
+        <option value="age">Newest</option>
+      </select>
+
+    </div>
+    <div class="span10">
+      <!--Body content-->
+
+      <ul class="musicTracks">
+        <li ng-repeat="track in musicTracks | filter:query | orderBy:orderProp"
+            class="thumbnail track-listing">
+          <a href="#/musicTracks/{{track.id}}" class="thumb"><img ng-src="{{track.imageUrl}}"></a>
+          <a href="#/musicTracks/{{track.id}}">{{track.name}}</a>
+          <p>{{track.snippet}}</p>
+        </li>
+      </ul>
+
+
+
+    </div>
+  </div>
+</div>
