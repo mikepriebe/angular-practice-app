@@ -5,8 +5,12 @@
 angular.module('myApp', [
   'ngRoute',
   'myApp.filters',
+  'musicTrackFilters',
+  'musicTrackAnimations',
+  'musicTrackServices',
   'myApp.services',
   'myApp.directives',
+  'musicTrackControllers',
   'myApp.controllers'
 ]).
 config(['$routeProvider', function($routeProvider) {
@@ -24,7 +28,7 @@ config(['$routeProvider', function($routeProvider) {
   		controller: 'MyCtrl3'
   	}).
   	when('/musicTracks', {
-  		templateUrl: 'partials/partial4.html',
+  		templateUrl: 'partials/musicTracks.html',
   		controller: 'TrackListCtrl'
   	}).
 	otherwise({

@@ -2,7 +2,7 @@
     {
         "age": 0, 
         "id": "music-track-01", 
-        "imageUrl": "img/musicTracks/ArtBlakey_FreedomRider.jpg", 
+        "imageUrl": "img/musicTracks/track-01.tiff", 
         "name": "Track 01 NAME", 
         "snippet": "Track 01 DESCRIPTION GenerationExp."
     }, 
