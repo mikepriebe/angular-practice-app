@@ -12,9 +12,6 @@ angular.module('myApp.controllers', []).
   .controller('MyCtrl3', [function() {
 
   }])
-  .controller('TrackListCtrl', [function() {
-
-  }]);
 
   var musicTrackControllers = angular.module('musicTrackControllers', []);
 
@@ -25,4 +22,3 @@ angular.module('myApp.controllers', []).
   }]);
   
   console.log('foo')
-  
