@@ -10,17 +10,17 @@
 <div class="container-fluid">
   <div class="row-fluid">
 
-    <div class="span2">
+    <div class="span3">
 		<!--Sidebar content-->
-      Search: <input ng-model="query">
-      Sort by:
+      <p>Search: <input ng-model="query"></p>
+      <p>Sort by:
       <select ng-model="orderProp">
         <option value="name">Alphabetical</option>
         <option value="age">Newest</option>
-      </select>
+      </select></p>
     </div>
 
-    <div class="span10">
+    <div class="span7 offset2">
       <!--Body content-->
       <p>Visuals of The Latest Music I've Uploaded</p>
       <ul class="musicTracks">
