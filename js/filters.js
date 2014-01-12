@@ -14,4 +14,3 @@ angular.module('myApp.filters', []).
     return input ? '\u2713' : '\u2718';
   };
 });
-

@@ -24,3 +24,5 @@ angular.module('myApp.controllers', []).
     $scope.orderProp = 'age';
   }]);
   
+  console.log('foo')
+  
