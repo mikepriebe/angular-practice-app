@@ -9,14 +9,14 @@
     {
         "age": 1, 
         "id": "music-track-02", 
-        "imageUrl": "img/musicTracks/track-02.tiff", 
+        "imageUrl": "img/musicTracks/27.jpg", 
         "name": "A Track 02 NAME", 
         "snippet": "Track 02 DESCRIPTION  GenerationExperience the future with MOTOROLA XOOM, the world's first tablet powered by Android 3.0 (Honeycomb)."
     }, 
     {
         "age": 2, 
         "id": "music-track-03", 
-        "imageUrl": "img/musicTracks/track-03.tiff", 
+        "imageUrl": "img/musicTracks/David-Bowie.jpg", 
         "name": "Track 03 NAME",
         "snippet": "Track 03 DESCRIPTION ."
     }
