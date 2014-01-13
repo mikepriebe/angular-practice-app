@@ -18,15 +18,17 @@
       <li><a href="#/view3">Contact</a></li>
       <li><a href="#/musicTracks">My Music</a></li>
     </ul>
-
     
     <div ng-view class="view-frame"></div>
     
     <div>SHARE app: v<span app-version></span></div>
 
     <script type="text/javascript">
-            d3.select("body").append("p").text("New paragraph!");
-        </script>
+    var dataset = [ 5, 10, 15, 20, 25 ];
+      d3.select("body").selectAll("p").data(dataset).enter().append("p").text("New paragraph!");
+    </script>
+
+    <p>Paragraph.</p>
 
   </div>
 
