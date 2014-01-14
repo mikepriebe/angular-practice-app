@@ -10,7 +10,7 @@
   <script type="text/javascript" src="d3/d3.v3.js"></script>
 </head>
 <body>
-  <div class="view-container">
+  <!-- <div class="view-container"> -->
 
     <ul class="menu">
       <li><a href="#/view1">SHARE</a></li>
@@ -18,17 +18,57 @@
       <li><a href="#/view3">Contact</a></li>
       <li><a href="#/musicTracks">My Music</a></li>
     </ul>
-
     
-    <div ng-view class="view-frame"></div>
+    <!-- <div ng-view class="view-frame"></div>
     
-    <div>SHARE app: v<span app-version></span></div>
+    <div>SHARE app: v<span app-version></span></div> -->
 
     <script type="text/javascript">
-            d3.select("body").append("p").text("New paragraph!");
-        </script>
 
-  </div>
+//Width and height
+var w = 500;
+var h = 50;
+
+    var dataset = [ 5, 10, 15, 20, 25 ];
+      
+      d3.select("body").selectAll("div")
+        .data(dataset)
+        .enter()
+        .append("div")
+        .attr("class", "bar")
+        .style("height", function(d) {
+          var barHeight = d * 6;
+          return barHeight + "px";
+        });
+
+        var svg = d3.select("body")
+            .append("svg")
+            .attr("width", w)   // <-- Here
+            .attr("height", h);
+
+        var circles = svg.selectAll("circle")
+                 .data(dataset)
+                 .enter()
+                 .append("circle");
+
+        circles.attr("cx", function(d, i) {
+            return (i * 50) + 25;
+        })
+        .attr("cy", h/2)
+        .attr("r", function(d) {
+            return d;
+        });
+
+
+    </script>
+    <svg width="500" height="50">
+      <ellipse cx="250" cy="25" rx="100" ry="25"/>
+      <circle cx="25" cy="25" r="22" fill="yellow" stroke="orange" stroke-width="5"/>
+    </svg>
+
+
+
+  <!-- </div> -->
 
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
