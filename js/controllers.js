@@ -20,5 +20,3 @@ angular.module('myApp.controllers', []).
    	$scope.musicTracks = Track.query();
     $scope.orderProp = 'age';
   }]);
-  
-  console.log('foo')
