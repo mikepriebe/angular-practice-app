@@ -10,7 +10,7 @@
   <script type="text/javascript" src="d3/d3.v3.js"></script>
 </head>
 <body>
-  <div class="view-container">
+  <!-- <div class="view-container"> -->
 
     <ul class="menu">
       <li><a href="#/view1">SHARE</a></li>
@@ -19,18 +19,34 @@
       <li><a href="#/musicTracks">My Music</a></li>
     </ul>
     
-    <div ng-view class="view-frame"></div>
+    <!-- <div ng-view class="view-frame"></div>
     
-    <div>SHARE app: v<span app-version></span></div>
+    <div>SHARE app: v<span app-version></span></div> -->
 
     <script type="text/javascript">
-    var dataset = [ 5, 10, 15, 20, 25 ];
-      d3.select("body").selectAll("p").data(dataset).enter().append("p").text("New paragraph!");
+    var dataset = [ 25, 7, 5, 26, 11, 8, 25, 14, 23, 19,
+                14, 11, 22, 29, 11, 13, 12, 17, 18, 10,
+                24, 18, 25, 9, 3 ];
+      
+      d3.select("body").selectAll("div")
+        .data(dataset)
+        .enter()
+        .append("div")
+        .attr("class", "bar")
+        .style("height", function(d) {
+          var barHeight = d * 6;
+          return barHeight + "px";
+        });
+
+
     </script>
+    <svg width="500" height="50">
+      <ellipse cx="250" cy="25" rx="100" ry="25"/>
+    </svg>
 
-    <p>Paragraph.</p>
 
-  </div>
+
+  <!-- </div> -->
 
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
