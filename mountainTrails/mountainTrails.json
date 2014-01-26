@@ -1,0 +1,29 @@
+[
+    {
+        "name": "Golden Ears", 
+        "elevationGain": 0, 
+        "distance": 1, 
+        "highestPeak": 12, 
+        "id": "golden-ears", 
+        "imageUrl": "img/mountainTrails/golden-ears.jpg", 
+        "snippet": "Golden Ears"
+    }, 
+    {
+        "name": "Lions", 
+        "elevationGain": 1, 
+        "distance": 3, 
+        "highestPeak": 10, 
+        "id": "lions", 
+        "imageUrl": "img/mountainTrails/27.jpg", 
+        "snippet": "The Lions"
+    }, 
+    {
+        "name": "Cheam", 
+        "elevationGain": 2, 
+        "distance": 2, 
+        "highestPeak": 11, 
+        "id": "cheam", 
+        "imageUrl": "img/mountainTrails/David-Bowie.jpg", 
+        "snippet": "Cheam"
+    }
+]

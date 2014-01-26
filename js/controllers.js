@@ -13,10 +13,21 @@ angular.module('myApp.controllers', []).
 
   }])
 
-  var musicTrackControllers = angular.module('musicTrackControllers', []);
+  var mountainTrailsControllers = angular.module('mountainTrailsControllers', []);
 
-  musicTrackControllers.controller('TrackListCtrl', ['$scope', 'Track',
-   function($scope, Track) {
-   	$scope.musicTracks = Track.query();
-    $scope.orderProp = 'age';
+  mountainTrailsControllers.controller('TrailListCtrl', ['$scope', 'Trail',
+   function($scope, Trail) {
+   	$scope.mountainTrails = Trail.query();
+    $scope.orderProp = 'name';
+  }]);
+
+  mountainTrailsControllers.controller('TrailDetailCtrl', ['$scope', '$routeParams', 'Trail',
+  function($scope, $routeParams, Trail) {
+    $scope.trail = Trail.get({trailId: $routeParams.trailId}, function(trail) {
+      $scope.mainImageUrl = trail.images[0];
+    });
+
+    $scope.setImage = function(imageUrl) {
+      $scope.mainImageUrl = imageUrl;
+    }
   }]);

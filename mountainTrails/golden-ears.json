@@ -1,0 +1,26 @@
+{
+    "id": "golden-ears", 
+    "name": "Golden Ears",
+    "description": "This is the peak from which the provincial park takes its name. This is a strenuous hike.", 
+    "distance": [
+        "24 km",
+        "15 mi"
+    ], 
+    "elevationGain": [
+        "1500 m", 
+        "4920 ft" 
+    ], 
+    "highestPoint": [
+        "1706 m", 
+        "5598 ft" 
+    ],
+    "averageGrade": "12.5%", 
+    "images": [
+        "img/mountainTrails/golden-ears.jpg", 
+        "img/phones/motorola-xoom-with-wi-fi.1.jpg", 
+        "img/phones/motorola-xoom-with-wi-fi.2.jpg", 
+        "img/phones/motorola-xoom-with-wi-fi.3.jpg", 
+        "img/phones/motorola-xoom-with-wi-fi.4.jpg", 
+        "img/phones/motorola-xoom-with-wi-fi.5.jpg"
+    ]
+}

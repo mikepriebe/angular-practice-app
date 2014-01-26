@@ -5,32 +5,32 @@
 angular.module('myApp', [
   'ngRoute',
   'myApp.filters',
-  'musicTrackFilters',
-  'musicTrackAnimations',
-  'musicTrackServices',
+  'mountainTrailsFilters',
+  'mountainTrailsAnimations',
+  'mountainTrailsServices',
   'myApp.services',
   'myApp.directives',
-  'musicTrackControllers',
+  'mountainTrailsControllers',
   'myApp.controllers'
 ]).
 config(['$routeProvider', function($routeProvider) {
   $routeProvider.
   	when('/view1', {
   		templateUrl: 'partials/partial1.html',
-  		controller: 'MyCtrl1'
+  		controller: 'TrailListCtrl'
   	}).
-  	when('/view2', {
-  		templateUrl: 'partials/partial2.html',
-  		controller: 'MyCtrl2'
-  	}).
+    when('/mountainTrails/:trailId', {
+        templateUrl: 'partials/partial2.html',
+        controller: 'TrailDetailCtrl'
+      }).
   	when('/view3', {
   		templateUrl: 'partials/partial3.html',
   		controller: 'MyCtrl3'
   	}).
-  	when('/musicTracks', {
-  		templateUrl: 'partials/musicTracks.html',
-  		controller: 'TrackListCtrl'
-  	}).
+    when('/mapOfMountains', {
+      templateUrl: 'mapOfMountains.html',
+      controller: 'MyCtrl1'
+    }).
 	otherwise({
 		redirectTo: '/view1'
 	});

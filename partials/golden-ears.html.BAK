@@ -2,8 +2,8 @@
   <div class="row-fluid">
 
     <div class="span12">
-		<h1>Compare Trails</h1>
-		<p>This is the partial for view 3.</p>
+		<h1>Golden Ears</h1>
+		<p>This is the partial for Golden Ears.</p>
 		<p>
 		  Showing of 'interpolate' filter:
 		  {{ 'Current version is v%VERSION%.' | interpolate }}

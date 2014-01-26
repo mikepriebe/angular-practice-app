@@ -1,6 +1,6 @@
-var musicTrackAnimations = angular.module('musicTrackAnimations', ['ngAnimate']);
+var mountainTrailsAnimations = angular.module('mountainTrailsAnimations', ['ngAnimate']);
 
-musicTrackAnimations.animation('.track', function() {
+mountainTrailsAnimations.animation('.trail', function() {
 
   var animateUp = function(element, className, done) {
     if(className != 'active') {

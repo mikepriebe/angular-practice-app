@@ -16,12 +16,14 @@
       <p>Sort by:
       <select ng-model="orderProp">
         <option value="name">Alphabetical</option>
-        <option value="age">Newest</option>
+        <option value="age">Elevation Gain</option>
+        <option value="age">Distance</option>
+        <option value="age">Highest Peak</option>
       </select></p>
     </div>
 
     <div class="span7 offset2">
-      <!--Body content-->
+      <!--Main content-->
       <p>Visuals of The Latest Music I've Uploaded</p>
       <ul class="musicTracks">
         <li ng-repeat="track in musicTracks | filter:query | orderBy:orderProp"

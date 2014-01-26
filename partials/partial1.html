@@ -1,32 +1,38 @@
-<div class="container-fluid">
+<h1>Hiking App</h1>
+
   <div class="row-fluid">
 
-    <div class="span4">
-      <h1>MUSIC</h1>
-      <h3>Column 1</h3>
-
-        <p>This is the partial for view 1.</p>
-        <p>more stuff...</p>
-
+    <div class="span12">
+      <h2>Hiking Trails in the Vancouver Region</h2>
+      <p>Search for a hiking trail near Vancouver.</p>
     </div>
 
-    <div class="span4">
-      <h1>FRIENDS</h1>
-      <h3>Column 2</h3>
+  </div> <!-- /.row-fluid -->
 
-        <p>Anothe.</p>
-        <p>more stuff...</p>
+  <div class="row-fluid">
 
+    <div class="span5">
+    <!--Sidebar content-->
+      <p>Search: <input ng-model="query"></p>
+      <p>Sort by:
+      <select ng-model="orderProp">
+        <option value="name">Alphabetical</option>
+        <option value="elevationGain">Elevation Gain</option>
+        <option value="distance">Distance</option>
+        <option value="highestPeak">Highest Peak</option>
+      </select></p>
     </div>
 
-    <div class="span4">
-      <h1>PORTFOLIO</h1>
-      <h3>Column 3</h3>
-
-        <p>This is the partial for view 1.</p>
-        <p>more stuff...</p>
-
+    <div class="span7">
+      <!--Main content-->
+      <ul class="mountainTrails">
+        <li ng-repeat="trail in mountainTrails | filter:query | orderBy:orderProp"
+            class="thumbnail trail-listing">
+          <a href="#/mountainTrails/{{trail.id}}" class="thumb"><img ng-src="{{trail.imageUrl}}"></a>
+          <a href="#/mountainTrails/{{trail.id}}">{{trail.name}}</a>
+          <p>{{trail.snippet}}</p>
+        </li>
+      </ul>
     </div>
 
-  </div>
-</div>
+  </div> <!-- /.row-fluid -->

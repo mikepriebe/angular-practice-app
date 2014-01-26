@@ -8,11 +8,11 @@
 angular.module('myApp.services', []).
   value('version', '0.1');
 
-  var musicTrackServices = angular.module('musicTrackServices', ['ngResource']);
+  var mountainTrailsServices = angular.module('mountainTrailsServices', ['ngResource']);
 
-musicTrackServices.factory('Track', ['$resource',
+mountainTrailsServices.factory('Trail', ['$resource',
   function($resource){
-    return $resource('musicTracks/:trackId.json', {}, {
-      query: {method:'GET', params:{trackId:'musicTracks'}, isArray:true}
+    return $resource('mountainTrails/:trailId.json', {}, {
+      query: {method:'GET', params:{trailId:'mountainTrails'}, isArray:true}
     });
   }]);

@@ -9,7 +9,7 @@ angular.module('myApp.filters', []).
     }
   }]);
 
-  angular.module('musicTrackFilters', []).filter('checkmark', function() {
+  angular.module('mountainTrailsFilters', []).filter('checkmark', function() {
   return function(input) {
     return input ? '\u2713' : '\u2718';
   };
