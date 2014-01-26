@@ -8,6 +8,24 @@
 
 		<p>{{trail.description}}</p>
 
+		<article></article>
+
+		<!-- {{trail.d3Chart}} -->
+
+		<script type="text/javascript">
+			
+			d3.select("article").selectAll("article")
+				.data("trail.d3Chart")
+				.enter()
+				.append("div")
+				.attr("class", "bar")
+				.style("height", function(d) {
+					var barHeight = d * 5;
+					return barHeight + "px";
+				});
+			
+		</script>
+
 		<!-- <div class="trail-images">
 		  <img ng-src="{{img}}"
 		       class="trail"

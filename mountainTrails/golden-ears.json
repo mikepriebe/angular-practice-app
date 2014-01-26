@@ -2,6 +2,7 @@
     "id": "golden-ears", 
     "name": "Golden Ears",
     "description": "This is the peak from which the provincial park takes its name. This is a strenuous hike.", 
+    "d3Chart": [ 5, 7, 9, 10, 15, 20, 25 ],
     "distance": [
         "24 km",
         "15 mi"
